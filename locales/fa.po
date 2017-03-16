@@ -38,24 +38,21 @@ msgstr ""
 
 #: methods.lua:145
 msgid "I'm not an admin, I can't kick people"
-msgstr "من مدیر نیستم نمی توانم کسی را اخراج کنم"
-
+msgstr "من که مدیر نیستم به نظرت چطوری اخراج کنم؟🤔"
 #: methods.lua:147
 msgid "I can't kick or ban an admin"
-msgstr "نمیتوانم مدیر را اخراج کنم!"
-
+msgstr "مدیرو نمیشه اخراج کرد:|"
 #: methods.lua:149
 msgid "There is no need to unban in a normal group"
-msgstr "نیازی به رفع مسدودیت در گروه معمولی نیست"
+msgstr "😉نیازی به رفع مسدودیت در گروه معمولی نیست"
 
 #: methods.lua:151
 msgid "This user is not a chat member"
-msgstr "یک کاربر ساده است"
-
+msgstr "از ممبرای گروه نیس😐"
 #: plugins/antispam.lua:57
 #, lua-format
 msgid "%s %s for <b>spam</b>! (%d/%d)"
-msgstr "کاربر %s به دلیل اسپم %s شد. (%d/%d)"
+msgstr "کاربر %s به دلیل اسپم سیک %s شد.🤘 (%d/%d)"
 
 #: plugins/antispam.lua:60
 #, lua-format
