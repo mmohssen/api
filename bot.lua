@@ -123,9 +123,9 @@ local function on_msg_receive(msg, callback) -- The fn run whenever a message is
 		if msg.date < os.time() - 7 then return end -- Do not process old messages.
 		if not msg.text then msg.text = msg.caption or '' end
 		
-		locale.language = db:get('lang:'..msg.chat.id) or 'en' --group language
+		locale.language = db:get('lang:'..msg.chat.id) or 'fa' --group language
 		if not config.available_languages[locale.language] then
-			locale.language = 'en'
+			locale.language = 'fa'
 		end
 		
 		collect_stats(msg)
@@ -186,14 +186,14 @@ local function on_msg_receive(msg, callback) -- The fn run whenever a message is
 			
 			-- send disclamer
 			api.sendMessage(msg.chat.id, _([[
-Hello everyone!
-My name is %s, and I'm a bot made to help administrators in their hard work.
-Unfortunately I can't work in normal groups, please ask the creator to convert this group to a supergroup.
+سلام به همه👋😀!
+اسم من %s, هست😎 و برای کمک به ادمین ها ساخته شدم😌.
+متاسفانه من تو گروه های معمولی نمیتونم کار کنم،به ادمین بگین گروه رو سوپر گروه بکنه😉.
 ]]):format(bot.first_name))
 			
 			-- log this event
 			if config.bot_settings.stream_commands then
-				print(string.format('%s[%s]%s Bot was added to a normal group %s%s [%d] -> [%d]',
+				print(string.format('%s[%s]%s منو تو گروه معمولی اد کردن %s%s [%d] -> [%d]',
 					  clr.blue, os.date('%X'), clr.yellow, clr.reset, msg.from.first_name, msg.from.id, msg.chat.id))
 			end
 		end
